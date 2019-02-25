@@ -1,0 +1,8 @@
+[Unit]
+Description=Motiosense slackbot service
+
+[Service]
+Environment=PYTHON_HOME=/usr/bin/motiosense/
+ExecStart=/usr/bin/motiosense/bin/python /usr/bin/motiosense/sensor.py
+RestartSec=1min 0s
+Restart=always
